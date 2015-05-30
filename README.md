@@ -1,5 +1,4 @@
 # gradle-for-customize
-定制化build.gradle
 
 定制化build.gradle
 ================================
