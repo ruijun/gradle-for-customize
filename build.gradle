@@ -131,9 +131,10 @@ android.applicationVariants.all{ variant ->
         versionName = manifestParser.getVersionName(android.sourceSets.main.manifest.srcFile) + "d";
     }
 
-    // 输出的apk名称
+    // 输出apk的名称
     newName = "Demo_V${versionName}_${variant.buildType.name}.apk";
-    def outputPath = "/Users/ruijun/App/"
+	// 输出apk的路径
+    def outputPath = "D:/Users/ruijun/App/"
     variant.outputs[0].outputFile = new File(outputPath, newName);
 //    variant.outputs[0].outputFile = new File(apk.parentFile, newName);
 }
